@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppExtra2-Dado</string>
+    <string name="str_btn_dado">Tira el Dado</string>
 </resources>
