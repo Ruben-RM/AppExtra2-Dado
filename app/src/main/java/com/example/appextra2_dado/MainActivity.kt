@@ -2,6 +2,7 @@ package com.example.appextra2_dado
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -12,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var tvResultado:TextView
+    private lateinit var ivResultado:ImageView
     private lateinit var btnDado:AppCompatButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initComponents()
     {
-        tvResultado = findViewById(R.id.tv_resultado)
+        ivResultado = findViewById(R.id.iv_dado)
         btnDado = findViewById(R.id.btn_dado)
     }
 
@@ -49,8 +50,6 @@ class MainActivity : AppCompatActivity() {
     {
         val dado = Dado(6)
         val tirada = dado.tirada()
-
-        tvResultado.text = tirada.toString()
     }
 }
 
