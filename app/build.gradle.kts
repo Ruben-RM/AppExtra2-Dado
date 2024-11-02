@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.appextra2_dado"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.appextra2_dado"
